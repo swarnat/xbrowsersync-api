@@ -4,3 +4,7 @@ config/settings.json
 coverage/
 node_modules/
 dist
+config/settings.json
+data/
+api.log.*
+api.log.*
