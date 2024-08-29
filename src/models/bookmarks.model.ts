@@ -17,7 +17,7 @@ export class Bookmarks extends BaseEntity implements IBookmarks {
 
   @Column({
     type: 'text',
-    default: '',
+    default: null,
   })
   bookmarks: string;
 
