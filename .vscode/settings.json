@@ -40,10 +40,10 @@
   },
   "css.validate": false,
   "editor.codeActionsOnSave": {
-    "source.addMissingImports": true,
-    "source.fixAll": false,
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    "source.addMissingImports": "explicit",
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
   "editor.detectIndentation": false,
   "editor.formatOnSave": true,

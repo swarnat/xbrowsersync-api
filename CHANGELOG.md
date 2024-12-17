@@ -1,3 +1,9 @@
+## [1.2.3] - 2024-08-29
+
+- update node.js to to version 22
+- update dependencies to latest versions
+- replace node-sass with sass
+
 ## [1.2.2] - 2024-08-29
 ### Fixed
 - Fixed a possible error during setup of mysql database (Thanks to [@technik-kvz](https://github.com/technik-kvz))
