@@ -1,7 +1,7 @@
 import path from 'path';
 
 export default {
-  version: '1.2.3',
+  version: '1.2.4',
   allowedOrigins:
     (process.env.XBSAPI_ALLOWEDORIGINS ??= '') != '' ? (process.env.XBSAPI_ALLOWEDORIGINS ??= '').split(',') : [],
   dailyNewSyncsLimit: +(process.env.XBSAPI_DAILYNEWSYNCSLIMIT ??= '3'),
@@ -32,6 +32,7 @@ export default {
   maxSyncSize: +(process.env.XBSAPI_MAXSYNCSIZE ??= '512000'),
   server: {
     behindProxy: (process.env.XBSAPI_SERVER_BEHINDPROXY ??= 'false') == 'true',
+    trustedProxies: parseInt(process.env.XBSAPI_SERVER_TRUSTED_PROXIES ?? '0', 10),
     host: '0.0.0.0',
     https: {
       certPath: '',

@@ -168,7 +168,7 @@ export const initApplication = (app: express.Express): void => {
 
   // If behind proxy use 'X-Forwarded-For' header for client ip address
   if (Config.get().server.behindProxy) {
-    app.enable('trust proxy');
+    app.set('trust proxy', Config.get().server.trustedProxies);
   }
 
   // Process JSON-encoded bodies, set body size limit to config value or default to 500kb

@@ -35,6 +35,7 @@ export interface IConfigSettings {
   maxSyncSize?: number;
   server?: {
     behindProxy?: boolean;
+    trustedProxies?: number;
     host?: string;
     https?: {
       certPath?: string;
